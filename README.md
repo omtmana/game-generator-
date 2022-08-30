@@ -4,29 +4,29 @@
 - Locations
 
 ## Users
-Name
-bio
-username
-password
-email
-availibility 
-user_location
-games_preference
-skill_level
-events
+ - Name
+ - bio
+ - username
+ - password
+ - email
+ - availibility 
+ - user_location
+ - games_preference
+ - skill_level
+ - events
 
 ##  Events
-name
-location_id:integer
-time:datetime
-user_id:integer
-game_name
+ - name
+ - location_id:integer
+ - time:datetime
+ - user_id:integer
+ - game_name
 
 ## Location
-location_name
-time_slots
-location_type
-address
+ - location_name
+ - time_slots
+ - location_type
+ - address
 
 # Controllers
  - Events
@@ -37,6 +37,7 @@ address
 
 ## User
 - User.events => [all events]
+- User.available_for => [list upcoming events that occur when user is available]
 - User.upcoming => [all events that have not occured yet]
 - User.history => [list of events that have occured]
 - User.next => next event in User's calendar
