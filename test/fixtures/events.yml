@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  location_id: 1
+  time: 2022-08-30 15:43:22
+  user_id: 1
+  game_name: MyString
+
+two:
+  name: MyString
+  location_id: 1
+  time: 2022-08-30 15:43:22
+  user_id: 1
+  game_name: MyString
