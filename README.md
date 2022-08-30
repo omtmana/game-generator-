@@ -13,7 +13,6 @@ availibility
 user_location
 games_preference
 skill_level
-events
 
 ##  Events
 name
@@ -30,6 +29,7 @@ address
 
 # Controllers
  - Events
+   
  - Users
  - Locations
 
