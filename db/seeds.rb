@@ -18,31 +18,31 @@
 #     availability: 'Anyday',
 #     user_location: 'New York, NYC'
 #     games_preference: 'Chess, Cards, Scrabble, Ludo, Jenga, Battleship, Monopoly, Risk, Connect Four, Taboo, Uno, Yahtzee'
-#     skill_level: 'Intermediate'
+#     skill_level: 'Advanced'
 # )
 
 # u2 = User.create!(
-#     name: 'Olivia ',
+#     name: 'Olivia Manalastas',
 #     bio: 'I love playing tennis!',
-#     username: 'amanal',
+#     username: 'Olivia',
 #     password: '12345',
-#     email: 'antmana@gmail.com',
-#     availability: 'Saturday, Sunday',
-#     user_location: 'Chicago, IL'
+#     email: 'olivia@gmail.com',
+#     availability: 'Anyday',
+#     user_location: 'New York, NYC'
 #     games_preference: 'Chess, Cards, Scrabble, Ludo, Jenga, Battleship, Monopoly, Risk, Connect Four, Taboo, Uno, Yahtzee'
-#     skill_level: 'Intermediate'
+#     skill_level: 'Advanced'
 # )
 
 # u3 = User.create!(
-#     name: 'Nathaniel Wolf',
-#     bio: 'I love playing tennis!',
+#     name: 'Zoheb Iqbal',
+#     bio: '',
 #     username: 'amanal',
 #     password: '12345',
-#     email: 'antmana@gmail.com',
-#     availability: 'Saturday, Sunday',
-#     user_location: 'Chicago, IL'
-#     games_preference: 'Tennis'
-#     skill_level: 'Intermediate'
+#     email: 'zoheb@gmail.com',
+#     availability: 'Anyday',
+#     user_location: 'New York, NYC'
+#     games_preference: 'Chess, Cards, Scrabble, Ludo, Jenga, Battleship, Monopoly, Risk, Connect Four, Taboo, Uno, Yahtzee'
+#     skill_level: 'Advanced'
 # )
 
 # u4 = User.create!(
