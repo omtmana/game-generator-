@@ -17,7 +17,7 @@ Event.destroy_all
 puts "Seeding Data"
 
 5.times do
-    User.create!(name:Faker::Name.name ,bio:Faker::Lorem.paragraph ,username: Faker::Internet.username ,password: Faker::Internet.password ,email: Faker::Internet.email)
+    User.create!(name:Faker::Name.name ,bio:Faker::Lorem.paragraph ,username: Faker::Internet.username ,password: Faker::Internet.password ,email: Faker::Internet.email, user_location: Faker::Address.zip)
     Location.create!(location_name:Faker::Company.name, address: Faker::Address.full_address)
 end
 

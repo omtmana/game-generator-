@@ -4,7 +4,6 @@
 - Locations
 
 ## Users
-<<<<<<< HEAD
  - Name
  - bio
  - username
@@ -15,17 +14,7 @@
  - games_preference
  - skill_level
  - events
-=======
-Name
-bio
-username
-password
-email
-availibility 
-user_location
-games_preference
-skill_level
->>>>>>> olivia
+
 
 ##  Events
  - name
