@@ -33,6 +33,24 @@ class UsersController < ApplicationController
       past_events = User.find_by!(id: params[:id]).events.where("time < ?", Time.now)
       render json:past_events
    end
+
+   def upcoming
+      user = find_user
+      upcoming_events = user.events.where("time >= ?", Time.now)
+      render json: upcoming_events
+   end
+
+   def next_event
+      user=find_user
+      event = user.events.where("time >= ?", Time.now).first
+      render json:event
+   end
+
+   # Have to figure out how availability is formatted before able to use it in a method
+   # def available_for
+   #    user = find_user
+   #    event
+   # end
    
    private 
 
