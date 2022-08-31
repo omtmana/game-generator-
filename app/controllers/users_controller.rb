@@ -29,6 +29,17 @@ class UsersController < ApplicationController
       end
    end
 
+   def events
+      user = User.find(params[:id])
+      events = Event.where(user_id:user.id)
+      render json:events
+   end
+
+
+   def history
+      past_events = User.find_by!(id: params[:id]).events.where(Date.parse(:time) < Date.today)
+      render json:past_events
+   end
    private 
    def user_params
       params.permit(:availability, :bio, :games_preference, :skill_level)
