@@ -40,6 +40,7 @@ class UsersController < ApplicationController
       past_events = User.find_by!(id: params[:id]).events.where(Date.parse(:time) < Date.today)
       render json:past_events
    end
+   
    private 
    def user_params
       params.permit(:availability, :bio, :games_preference, :skill_level)
