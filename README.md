@@ -15,7 +15,6 @@
  - skill_level
  - events
 
-
 ##  Events
  - name
  - location_id:integer
