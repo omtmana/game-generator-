@@ -1,4 +1,4 @@
-import React , {usestate, useEffect} from 'react'
+import React from 'react'
 import Home from './components/Home'
 import About from './components/About'
 import Events from './components/Events'
@@ -8,6 +8,7 @@ import './App.css';
 
 function App() {
   return (
+    <div>
     <Router>
       <nav>
         <Link to="/"> HOME </Link>
@@ -22,6 +23,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
       </Routes>
     </Router>
+    </div>
   );
 }
 
