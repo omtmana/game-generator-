@@ -29,13 +29,6 @@ class UsersController < ApplicationController
       head :no_content
    end
 
-   def user_events
-      user = find_user
-      events = Event.where(user_id:user.id)
-      render json:events
-   end
-
-
    # def history
    #    past_events = User.find_by!(id: params[:id]).events.where()
    #    render json:past_events
