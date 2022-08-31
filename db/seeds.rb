@@ -1,12 +1,220 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+
+
+# User availability, user location, games preference, skill level
+
+# Locations - time slots and location type
+# availability, :bio, :email, :games_preference, :name, :password, :skill_level, :user_location
 
 #Destroy
+
+# puts "Seeding Data"
+
+# u1 = User.create!(
+#     name: 'Nathaniel Wolf',
+#     bio: '',
+#     username: 'Nathaniel',
+#     password: '12345',
+#     email: 'nathaniel@gmail.com',
+#     availability: 'Anyday',
+#     user_location: 'New York, NYC'
+#     games_preference: 'Chess, Cards, Scrabble, Ludo, Jenga, Battleship, Monopoly, Risk, Connect Four, Taboo, Uno, Yahtzee'
+#     skill_level: 'Intermediate'
+# )
+
+# u2 = User.create!(
+#     name: 'Olivia ',
+#     bio: 'I love playing tennis!',
+#     username: 'amanal',
+#     password: '12345',
+#     email: 'antmana@gmail.com',
+#     availability: 'Saturday, Sunday',
+#     user_location: 'Chicago, IL'
+#     games_preference: 'Chess, Cards, Scrabble, Ludo, Jenga, Battleship, Monopoly, Risk, Connect Four, Taboo, Uno, Yahtzee'
+#     skill_level: 'Intermediate'
+# )
+
+# u3 = User.create!(
+#     name: 'Nathaniel Wolf',
+#     bio: 'I love playing tennis!',
+#     username: 'amanal',
+#     password: '12345',
+#     email: 'antmana@gmail.com',
+#     availability: 'Saturday, Sunday',
+#     user_location: 'Chicago, IL'
+#     games_preference: 'Tennis'
+#     skill_level: 'Intermediate'
+# )
+
+# u4 = User.create!(
+#     name: 'Nathaniel Wolf',
+#     bio: 'I love playing tennis!',
+#     username: 'amanal',
+#     password: '12345',
+#     email: 'antmana@gmail.com',
+#     availability: 'Saturday, Sunday',
+#     user_location: 'Chicago, IL'
+#     games_preference: 'Tennis'
+#     skill_level: 'Intermediate'
+# )
+
+# u5 = User.create!(
+#     name: 'Nathaniel Wolf',
+#     bio: 'I love playing tennis!',
+#     username: 'amanal',
+#     password: '12345',
+#     email: 'antmana@gmail.com',
+#     availability: 'Saturday, Sunday',
+#     user_location: 'Chicago, IL'
+#     games_preference: 'Tennis'
+#     skill_level: 'Intermediate'
+# )
+
+# u6 = User.create!(
+#     name: 'Nathaniel Wolf',
+#     bio: 'I love playing tennis!',
+#     username: 'amanal',
+#     password: '12345',
+#     email: 'antmana@gmail.com',
+#     availability: 'Saturday, Sunday',
+#     user_location: 'Chicago, IL'
+#     games_preference: 'Tennis'
+#     skill_level: 'Intermediate'
+# )
+
+# u7 = User.create!(
+#     name: 'Nathaniel Wolf',
+#     bio: 'I love playing tennis!',
+#     username: 'amanal',
+#     password: '12345',
+#     email: 'antmana@gmail.com',
+#     availability: 'Saturday, Sunday',
+#     user_location: 'Chicago, IL'
+#     games_preference: 'Tennis'
+#     skill_level: 'Intermediate'
+# )
+
+# u8 = User.create!(
+#     name: 'Nathaniel Wolf',
+#     bio: 'I love playing tennis!',
+#     username: 'amanal',
+#     password: '12345',
+#     email: 'antmana@gmail.com',
+#     availability: 'Saturday, Sunday',
+#     user_location: 'Chicago, IL'
+#     games_preference: 'Tennis'
+#     skill_level: 'Intermediate'
+# )
+
+# u9 = User.create!(
+#     name: 'Nathaniel Wolf',
+#     bio: 'I love playing tennis!',
+#     username: 'amanal',
+#     password: '12345',
+#     email: 'antmana@gmail.com',
+#     availability: 'Saturday, Sunday',
+#     user_location: 'Chicago, IL'
+#     games_preference: 'Tennis'
+#     skill_level: 'Intermediate'
+# )
+
+# u10 = User.create!(
+#     name: 'Nathaniel Wolf',
+#     bio: 'I love playing tennis!',
+#     username: 'amanal',
+#     password: '12345',
+#     email: 'antmana@gmail.com',
+#     availability: 'Saturday, Sunday',
+#     user_location: 'Chicago, IL'
+#     games_preference: 'Tennis'
+#     skill_level: 'Intermediate'
+# )
+
+#  l1 = Location.create!(
+#     location_name: 'Andrea\'s House',
+#     time_slots: ,
+#     location_type: 'House',
+#     address: 'Somewhere in America'
+#  )
+
+#  l2 = Location.create!(
+#     location_name: '?????',
+#     time_slots: '?????',
+#     location_type: '????',
+#     address: '????'
+#  )
+
+#  l3 = Location.create!(
+#     location_name: '?????',
+#     time_slots: '?????',
+#     location_type: '????',
+#     address: '????'
+#  )
+
+#  l4 = Location.create!(
+#     location_name: '?????',
+#     time_slots: '?????',
+#     location_type: '????',
+#     address: '????'
+#  )
+
+#  l5 = Location.create!(
+#     location_name: '?????',
+#     time_slots: '?????',
+#     location_type: '????',
+#     address: '????'
+#  )
+
+#  l6 = Location.create!(
+#     location_name: '?????',
+#     time_slots: '?????',
+#     location_type: '????',
+#     address: '????'
+#  )
+
+#  l7 = Location.create!(
+#     location_name: '?????',
+#     time_slots: '?????',
+#     location_type: '????',
+#     address: '????'
+#  )
+
+#  l8 = Location.create!(
+#     location_name: '?????',
+#     time_slots: '?????',
+#     location_type: '????',
+#     address: '????'
+#  )
+
+#  l9 = Location.create!(
+#     location_name: '?????',
+#     time_slots: '?????',
+#     location_type: '????',
+#     address: '????'
+#  )
+
+#  l10 = Location.create!(
+#     location_name: '?????',
+#     time_slots: '?????',
+#     location_type: '????',
+#     address: '????'
+#  )
+
+
+#  e1 = Event.create!(
+#     name: 'Tennis Match!'
+#     location_id: l1.id,
+#     user_id: u1.id,
+#     game_name: 'Tennis Match'
+#  )
+
+#  e2 = Event.create!(
+#     name: '????'
+#     location_id: l1.id,
+#     user_id: u1.id,
+#     game_name: '????'
+#  )
+
+# puts 'Done Seeding'
 
 puts "Destroying Data..."
 
