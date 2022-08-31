@@ -3,7 +3,7 @@ import {useState, useEffect} from 'react'
 
 function App() {
   const [users, setUsers]= useState([])
-
+  
   useEffect(() => {
     const getUsers = async () => {
       let req = await fetch('http://localhost:3000/users')
