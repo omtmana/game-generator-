@@ -1,4 +1,4 @@
-# Models
+# Models 
 - Users
 - Events
 - Locations
