@@ -11,4 +11,9 @@ Rails.application.routes.draw do
   get '/users', to: 'users#index'
   post '/users', to: 'users#create'
   patch '/users/:id', to: 'users#update'
+
+  get '/locations', to: 'locations#index'
+  post '/locations', to: 'locations#create'
+  patch '/locations/:id', to: 'locations#update'
+  
 end

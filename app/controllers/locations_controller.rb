@@ -10,11 +10,17 @@ class LocationsController < ApplicationController
       location = Location.create!(
          location_name: params[:location_name],
          time_slots: params[:time_slots],
-         location_type
+         location_type: params[:location_type],
+         address: params[:address]
       )
-
    end
 
    def update
+      location = Location.find_by!(id: params[:id])
+      if location.update(location_params)
+         render 
+      else
+      end
+
    end
 end
