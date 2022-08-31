@@ -14,9 +14,9 @@ class UsersController < ApplicationController
          password: params[:password],
          email: params[:email],
          availability: params[:availability], 
-         user_location: params[:user_location]
-         games_preference: params[:games_preference],
-         skill_level: params[:skill_level],
+         # user_location: params[:user_location]
+         # games_preference: params[:games_preference],
+         # skill_level: params[:skill_level],
       )
    end
 

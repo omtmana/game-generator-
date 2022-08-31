@@ -14,6 +14,41 @@ User.destroy_all
 Location.destroy_all
 Event.destroy_all
 
+# puts "Seeding Data"
+# u1 = User.create!(
+#     name: 'Andrea Manalastas',
+#     bio: 'I love playing tennis!',
+#     username: 'amanal',
+#     password: '12345',
+#     email: 'antmana@gmail.com',
+#     availability: 'Saturday, Sunday',
+#     user_location: 'Chicago, IL'
+#     games_preference: 'Tennis'
+#     skill_level: 'Intermediate'
+# )
+
+#  l1 = Location.create!(
+#     location_name: 'Andrea\'s House',
+#     time_slots: ,
+#     location_type: 'House',
+#     address: 'Somewhere in America'
+#  )
+
+#  e1 = Event.create!(
+#     name: 'Tennis Match!'
+#     location_id: l1.id,
+#     user_id: u1.id,
+#     game_name: 'Tennis Match'
+#  )
+
+# puts 'Done Seeding'
+
+puts "Destroying Data..."
+
+User.destroy_all
+Location.destroy_all
+Event.destroy_all
+
 puts "Seeding Data"
 
 5.times do
