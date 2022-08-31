@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   end
 
   get "/events", to: "events#index"
+  get "/users/:id/history", to: "users#history"
 end

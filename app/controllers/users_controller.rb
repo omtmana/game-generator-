@@ -29,10 +29,10 @@ class UsersController < ApplicationController
       head :no_content
    end
 
-   # def history
-   #    past_events = User.find_by!(id: params[:id]).events.where()
-   #    render json:past_events
-   # end
+   def history
+      past_events = User.find_by!(id: params[:id]).events.where("time < ?", Time.now)
+      render json:past_events
+   end
    
    private 
 
