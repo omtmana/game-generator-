@@ -46,12 +46,13 @@ class UsersController < ApplicationController
       render json:event
    end
 
-   # Have to figure out how availability is formatted before able to use it in a method
-   # def available_for
-   #    user = find_user
-   #    event
-   # end
-   
+   def search
+      user = find_user
+      user_coords = Geocoder.search(user.user_location).first.coordinates
+      # events_in_radius = Event.where(Geocoder)
+      
+   end
+
    private 
 
    def find_user
