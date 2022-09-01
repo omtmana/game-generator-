@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
 
 resources :users, :locations do
-    resources :events, shallow: true  
+    resources :events, shallow: true do
+      resources :attendees, shallow: false, only: [:index, :create, :destroy]
+    end
   end
 
   get "/events", to: "events#index"
@@ -13,7 +15,8 @@ resources :users, :locations do
   get '/user/:id/search', to: "user#search"
 
   #Custom Event Routes
-  get '/events/:id/attendees', to: "events#attendees"
+  # get '/events/:id/attendees', to: "events#attendees"
+  # post '/events/:id/attendees', to: "events"
   
 
   #Custom Locations Routes
