@@ -182,6 +182,7 @@ l1 = Location.create!(
     name: 'Board game day one!',
     location_id: l2.id,
     user_id: u3.id,
+    time:Faker::Date.in_date_period,
     game_name: 'Chess'
  )
 
@@ -189,6 +190,7 @@ l1 = Location.create!(
     name: 'Board game day two',
     location_id: l1.id,
     user_id: u4.id,
+    time:Faker::Date.in_date_period,
     game_name: 'Cards'
  )
 
@@ -196,6 +198,7 @@ l1 = Location.create!(
     name: 'Board game day three',
     location_id: l7.id,
     user_id: u6.id,
+    time:Faker::Date.in_date_period,
     game_name: 'Scrabble'
  )
 
@@ -203,6 +206,7 @@ l1 = Location.create!(
     name: 'Board game day four',
     location_id: l9.id,
     user_id: u2.id,
+    time:Faker::Date.in_date_period,
     game_name: 'Ludo'
  )
 
@@ -210,10 +214,11 @@ l1 = Location.create!(
     name: 'Board game day five',
     location_id: l5.id,
     user_id: u1.id,
+    time:Faker::Date.in_date_period,
     game_name: 'Yahtzee'
  )
 
- Event.create!(time:Faker::Date.in_date_period)
+ 
 
 puts 'Done Seeding'
 
