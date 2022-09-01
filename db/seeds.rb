@@ -133,21 +133,21 @@
 #     location_name: 'Game house one',
 #     availabilty: 'Anyday',
 #     location_type: 'House',
-#     address: '9797 Meadowbrook Ave, New York, NYC, 10009'
+#     address: '11 Broadway 2nd floor, New York, NY, 10004'
 #  )
 
 #  l2 = Location.create!(
 #     location_name: 'Game house two',
 #     availabilty: 'Anyday',
 #     location_type: 'house',
-#     address: '277 Mammoth Ave, New York, NYC, 10011'
+#     address: '120 Hudson St, New York, NY, 10013'
 #  )
 
 #  l3 = Location.create!(
 #     location_name: 'Game house three',
 #     availabilty: 'Monday, Tuesday, Wednesday, Thursday, Friday, Saturday',
 #     location_type: 'house',
-#     address: '9366 Jefferson Circle, New York, NYC, 10034'
+#     address: '405 Lexington Ave, New York, NY, 10174'
 #  )
 
 #  l4 = Location.create!(
