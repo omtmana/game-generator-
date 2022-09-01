@@ -48,9 +48,8 @@ class UsersController < ApplicationController
 
    def search
       user = find_user
-      user_coords = Geocoder.search(user.user_location).first.coordinates
-      # events_in_radius = Event.where(Geocoder)
-      
+      events_in_radius = Event.near(user.geocode,params[:user_radius])
+      render json:events_in_radius
    end
 
    private 
