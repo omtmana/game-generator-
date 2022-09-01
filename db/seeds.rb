@@ -180,38 +180,40 @@ l1 = Location.create!(
 
  e1 = Event.create!(
     name: 'Board game day one!',
-    location_id: l1.id,
-    user_id: u1.id,
+    location_id: l2.id,
+    user_id: u3.id,
     game_name: 'Chess'
  )
 
  e2 = Event.create!(
     name: 'Board game day two',
     location_id: l1.id,
-    user_id: u1.id,
+    user_id: u4.id,
     game_name: 'Cards'
  )
 
  e3 = Event.create!(
     name: 'Board game day three',
-    location_id: l1.id,
-    user_id: u1.id,
+    location_id: l7.id,
+    user_id: u6.id,
     game_name: 'Scrabble'
  )
 
  e4 = Event.create!(
     name: 'Board game day four',
-    location_id: l1.id,
-    user_id: u1.id,
+    location_id: l9.id,
+    user_id: u2.id,
     game_name: 'Ludo'
  )
 
  e5 = Event.create!(
     name: 'Board game day five',
-    location_id: l1.id,
+    location_id: l5.id,
     user_id: u1.id,
     game_name: 'Yahtzee'
  )
+
+ Event.create!(time:Faker::Date.in_date_period)
 
 puts 'Done Seeding'
 
