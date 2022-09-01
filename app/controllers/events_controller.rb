@@ -35,6 +35,11 @@ class EventsController < ApplicationController
       head :no_content
    end
 
+   def attendees
+      event = find_event
+      #I'll finish this after guest_list model is implemented
+   end
+
    private 
 
    def find_event

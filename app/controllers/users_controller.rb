@@ -29,11 +29,30 @@ class UsersController < ApplicationController
       head :no_content
    end
 
-   # def history
-   #    past_events = User.find_by!(id: params[:id]).events.where()
-   #    render json:past_events
-   # end
-   
+   def history
+      past_events = User.find_by!(id: params[:id]).events.where("time < ?", Time.now)
+      render json:past_events
+   end
+
+   def upcoming
+      user = find_user
+      upcoming_events = user.events.where("time >= ?", Time.now)
+      render json: upcoming_events
+   end
+
+   def next_event
+      user=find_user
+      event = user.events.where("time >= ?", Time.now).first
+      render json:event
+   end
+
+   def search
+      user = find_user
+      user_coords = Geocoder.search(user.user_location).first.coordinates
+      # events_in_radius = Event.where(Geocoder)
+      
+   end
+
    private 
 
    def find_user
